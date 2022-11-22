@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <div class="container border rounded border-white shadow main">
+
+    <div>
+      <a href="index.html">
+        <h2>Pokedex</h2>
+      </a>
+      <span class="lead">Encuentra tu próximo pokemon</span>
+      <br><br>
+      <img class="img-fluid mb-4" src="./assets/img/inicio.png" alt="pokemon" id="poke-img">
+    </div>
+
+
+    <div id="right-side">
+      <section class="form-inline" id="search">
+        <input class="form-control form-control-md shadow" type="text" placeholder="Nombre del pokemon" id="pokeName"
+          name="pokeName">
+        <button class="btn btn-dark shadow" onclick="fetchPokemon()">Buscar Pokemon</button>
+      </section>
+      <p class="lead">El Pokemon es: <span id="poke-name">____________</span></p>
+      <section class="card shadow" id="section-movimientos">
+        <div class="card-header">
+          Movimientos
+        </div>
+        <ul id="ulMove">
+
+        </ul>
+      </section>
+
+      <section class="card shadow" id="section-recipe">
+        <div class="card-header">
+          Estadísticas
+        </div>
+        <p>Tipo:
+          <span id="poke-type" name="poke-type">Tipo</span>
+        </p>
+        <p>Altura:
+          <span id="poke-altura" name="poke-altura">Altura</span>
+        </p>
+        <p>Peso: <span id="poke-peso" name="poke-peso">Peso</span>
+        </p>
+
+
+      </section>
+    </div>
+
+  </div>
+
+</body>
+<footer>
+  <br>
+  <script src="./assets/js/pokedex.js"></script>
+  <address>By Barbara Martel</address>
+</footer>
+</body>
+
+</html>
